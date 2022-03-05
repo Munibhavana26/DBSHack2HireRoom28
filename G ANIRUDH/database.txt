@@ -1,0 +1,43 @@
+#G_ANIRUDH hackathon database, Virtual Room Number 28
+
+create database dbname;
+#created a database called"dbname"
+
+use dbname;
+#using dbname database
+
+create table hni( 
+id varchar(10) primary key,
+name varchar(20)
+);
+#created "hni" table to store HNI member details
+
+
+insert into hni values("101","hni1");
+insert into hni values("102","hni2");
+#records into 'hni' table
+
+create table vm(
+id varchar(10) primary key,
+name varchar(20)
+);
+#created "vm" table to store VM member details
+
+insert into vm values("1","vm1");
+insert into vm values("2","vm2");
+insert into vm values("3","vm3");
+insert into vm values("4","vm4");
+insert into vm values("5","vm5");
+insert into vm values("6","vm6");
+#records into 'vm' table
+
+create table appoints(
+date varchar(2),
+month varchar(2),
+year varchar(4)
+);
+#created table "appoints" to store appointment dates
+
+insert into appoints values("11","12","2021");
+insert into appoints values("22","01","2022");
+#records into the 'appoints' table
